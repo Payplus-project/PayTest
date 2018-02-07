@@ -39,9 +39,9 @@ In addition, without PayTestgate and Pmn, Bitcoin and Ethereum cannot interact w
 | Stake Time | `36 hours` |
 | Masternode Requirement | `16,120 PAYTEST` |
 | Masternode Reward | `40% PoS Block ` |
-| Port | `28666` |
+| Port | `37373` |
 | RPC Port | `9888` |
-| Masternode Port | `28666` |
+| Masternode Port | `37373` |
 
 
 Build PayTest wallet

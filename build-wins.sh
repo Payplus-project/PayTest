@@ -76,13 +76,13 @@ createconf() {
 	mnip=$(curl -s https://api.ipify.org)
 	rpcuser=$(date +%s | sha256sum | base64 | head -c 10 ; echo)
 	rpcpass=$(openssl rand -base64 32)
-	printf "%s\n" "rpcuser=$rpcuser" "rpcpassword=$rpcpass" "rpcallowip=127.0.0.1" "port=28666" "listen=1" "server=1" "daemon=1" "maxconnections=256" "rpcport=9888" > $CONFILE
+	printf "%s\n" "rpcuser=$rpcuser" "rpcpassword=$rpcpass" "rpcallowip=127.0.0.1" "port=37373" "listen=1" "server=1" "daemon=1" "maxconnections=256" "rpcport=9888" > $CONFILE
 }
 
 success() {
 	paytestd
 	message "SUCCESS! PAYTEST wallet - paytest.conf setting below..."
-	message "PAYTEST $mnip:28666 $MNPRIVKEY TXHASH INDEX"
+	message "PAYTEST $mnip:37373 $MNPRIVKEY TXHASH INDEX"
 	exit 0
 }
 
