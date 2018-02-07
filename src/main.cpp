@@ -73,7 +73,7 @@ bool fCheckBlockIndex = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 36 * 60 * 60;
+unsigned int nStakeMinAge = 24 * 60 * 60;   // min age 24 hour
 int64_t nReserveBalance = 0;
 
 uint256 bnProofOfStakeLimit = (~uint256(0) >> 20);
@@ -1618,21 +1618,17 @@ CAmount GetProofOfWorkReward(int64_t nFees, int nHeight)
     if (nHeight < 1) {
         nSubsidy = 1 * COIN;
     } else if (nHeight == 1) {
-        nSubsidy = 3000000 * COIN;
-    } else if (nHeight < 500) {
-        nSubsidy = 1 * COIN;
-    } else if (nHeight == 501) {
-        nSubsidy = 1000 * COIN;
-    } else if (nHeight < 1000000) {
-        nSubsidy = 10 * COIN;
-    } else if (nHeight < 1001000) {
-        nSubsidy = 30 * COIN;
-    } else if (nHeight < 5000000) {
-        nSubsidy = 10 * COIN;
-    } else if (nHeight < 6000000) {
-        nSubsidy = 10 * COIN;
+        nSubsidy = 2000000 * COIN;
+    } else if (nHeight < 1000) {
+        nSubsidy = 42 * COIN;
+    } else if (nHeight < 6000) {
+        nSubsidy = 21 * COIN;
+    } else if (nHeight < 27000) {
+        nSubsidy = 19 * COIN;
+    } else if (nHeight < 29000) {
+        nSubsidy = 17 * COIN;
     } else {
-        nSubsidy = 1 * COIN;
+        nSubsidy = 11 * COIN;
     }
 
     if (nHeight < LAST_HEIGHT_FEE_BLOCK) {
@@ -1646,10 +1642,16 @@ CAmount GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, int nHeight)
     CAmount nSubsidy = STATIC_POS_REWARD;
 
     // First 100,000 blocks double stake for masternode ready
-    if (nHeight < 100000) {
-        nSubsidy = 2 * COIN;
-    } else {
+    if (nHeight < 1000) {
         nSubsidy = 1 * COIN;
+    } else if (nHeight < 6000) {
+        nSubsidy = 21 * COIN;
+    } else if (nHeight < 27000) {
+        nSubsidy = 23 * COIN;
+    } else if (nHeight < 29000) {
+        nSubsidy = 25 * COIN;
+    } else {
+        nSubsidy = 31 * COIN;
     }
 
     return nSubsidy + nFees;
@@ -1657,7 +1659,17 @@ CAmount GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, int nHeight)
 
 CAmount GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
-    int64_t ret = blockValue * 0.4; //40% for masternodes
+    if (nHeight < 1000) {
+        int64_t ret = blockValue * 0.01; //1% for masternodes
+    } else if (nHeight < 6000) {
+        int64_t ret = blockValue * 0.99; //99% for masternodes
+//    } else if (nHeight < 27000) {
+//        int64_t ret = blockValue * 0.9; //90% for masternodes
+    } else if (nHeight < 57000) {
+        int64_t ret = blockValue * 0.67; //67% for masternodes
+    } else {
+        int64_t ret = blockValue * 0.75; //75% for masternodes
+    }
 
     return ret;
 }

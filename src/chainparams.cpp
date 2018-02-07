@@ -111,9 +111,9 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 20 * 60; // PAYTEST: 1 36hrs
-        nTargetSpacing = 2 * 60;  // PAYTEST: 2 minute
-        nLastPOWBlock = 6000000;
+        nTargetTimespan = 24 * 60; // PAYTEST: 24 hrs
+        nTargetSpacing = 90;  // PAYTEST: 90 sec
+        nLastPOWBlock = 2000000;
         nMaturity = 79;
         nMasternodeCountDrift = 20;
         nModifierUpdateBlock = 615800;
@@ -207,9 +207,9 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 30 * 60; // PAYTEST: 1 day
-        nTargetSpacing = 3 * 60;  // PAYTEST: 1 minute
-        nLastPOWBlock = 6000000;
+        nTargetTimespan = 12 * 60; // PAYTEST: 1 day
+        nTargetSpacing = 1 * 60;  // PAYTEST: 1 minute
+        nLastPOWBlock = 2000000;
         nMaturity = 79;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
 

@@ -421,7 +421,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternode() {
 
     // Filter
     BOOST_FOREACH(const COutput& out, vCoins) {
-        if(out.tx->vout[out.i].nValue == GetMNCollateral(chainActive.Tip()->nHeight)*COIN) {  //exactly 16120 PAYTEST
+        if(out.tx->vout[out.i].nValue == GetMNCollateral(chainActive.Tip()->nHeight)*COIN) {  //exactly 15000 PAYTEST
         	filteredCoins.push_back(out);
         }
     }
@@ -441,7 +441,7 @@ vector<COutput> CActiveMasternode::SelectCoinsMasternodeForPubKey(std::string co
 
     // Filter
     BOOST_FOREACH(const COutput& out, vCoins) {
-        if(out.tx->vout[out.i].scriptPubKey == scriptPubKey && out.tx->vout[out.i].nValue == 16120*COIN) { //exactly 161.200 PAYTEST
+        if(out.tx->vout[out.i].scriptPubKey == scriptPubKey && out.tx->vout[out.i].nValue == 15000*COIN) { //exactly 150.000 PAYTEST
         	filteredCoins.push_back(out);
         }
     }
