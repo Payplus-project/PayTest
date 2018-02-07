@@ -1,0 +1,2401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="src">
+        <df name="compat">
+          <in>glibc_compat.cpp</in>
+          <in>glibc_sanity.cpp</in>
+          <in>glibcxx_compat.cpp</in>
+          <in>glibcxx_sanity.cpp</in>
+          <in>strnlen.cpp</in>
+        </df>
+        <df name="crypto">
+          <in>aes_helper.c</in>
+          <in>cubehash.c</in>
+          <in>echo.c</in>
+          <in>fugue.c</in>
+          <in>gost.c</in>
+          <in>hmac_sha256.cpp</in>
+          <in>hmac_sha512.cpp</in>
+          <in>jh.c</in>
+          <in>rfc6979_hmac_sha256.cpp</in>
+          <in>ripemd160.cpp</in>
+          <in>scrypt.cpp</in>
+          <in>sha1.cpp</in>
+          <in>sha256.cpp</in>
+          <in>sha512.cpp</in>
+          <in>skein.c</in>
+        </df>
+        <df name="ethereum">
+          <df name="bench">
+            <in>main.cpp</in>
+          </df>
+          <df name="eth">
+            <in>AccountManager.cpp</in>
+            <in>main.cpp</in>
+          </df>
+          <df name="ethkey">
+            <in>main.cpp</in>
+          </df>
+          <df name="ethminer">
+            <in>main.cpp</in>
+          </df>
+          <df name="ethvm">
+            <in>main.cpp</in>
+          </df>
+          <df name="evmjit">
+            <df name="examples">
+              <in>capi.c</in>
+              <in>examplevm.c</in>
+            </df>
+            <df name="libevmjit">
+              <in>Arith256.cpp</in>
+              <in>Array.cpp</in>
+              <in>BasicBlock.cpp</in>
+              <in>Cache.cpp</in>
+              <in>Compiler.cpp</in>
+              <in>CompilerHelper.cpp</in>
+              <in>Endianness.cpp</in>
+              <in>ExecStats.cpp</in>
+              <in>Ext.cpp</in>
+              <in>GasMeter.cpp</in>
+              <in>Instruction.cpp</in>
+              <in>JIT.cpp</in>
+              <in>Memory.cpp</in>
+              <in>Optimizer.cpp</in>
+              <in>RuntimeManager.cpp</in>
+              <in>Type.cpp</in>
+              <in>Utils.cpp</in>
+            </df>
+            <df name="tests">
+              <in>test-evm.cpp</in>
+              <in>test-evmjit-standalone.c</in>
+            </df>
+          </df>
+          <df name="libdevcore">
+            <in>Base64.cpp</in>
+            <in>Common.cpp</in>
+            <in>CommonData.cpp</in>
+            <in>CommonIO.cpp</in>
+            <in>CommonJS.cpp</in>
+            <in>FileSystem.cpp</in>
+            <in>FixedHash.cpp</in>
+            <in>Guards.cpp</in>
+            <in>Hash.cpp</in>
+            <in>Log.cpp</in>
+            <in>MemoryDB.cpp</in>
+            <in>OverlayDB.cpp</in>
+            <in>RLP.cpp</in>
+            <in>SHA3.cpp</in>
+            <in>TransientDirectory.cpp</in>
+            <in>TrieCommon.cpp</in>
+            <in>TrieDB.cpp</in>
+            <in>TrieHash.cpp</in>
+            <in>Worker.cpp</in>
+          </df>
+          <df name="libdevcrypto">
+            <in>AES.cpp</in>
+            <in>Common.cpp</in>
+            <in>CryptoPP.cpp</in>
+            <in>ECDHE.cpp</in>
+            <in>SecretStore.cpp</in>
+          </df>
+          <df name="libethash">
+            <in>internal.c</in>
+            <in>io.c</in>
+            <in>io_posix.c</in>
+            <in>io_win32.c</in>
+            <in>mmap_win32.c</in>
+            <in>sha3.c</in>
+            <in>util.c</in>
+            <in>util_win32.c</in>
+          </df>
+          <df name="libethashseal">
+            <df name="genesis">
+              <in>eip150Test.cpp</in>
+              <in>eip158Test.cpp</in>
+              <in>frontierTest.cpp</in>
+              <in>homesteadTest.cpp</in>
+              <in>mainNetwork.cpp</in>
+              <in>mainNetworkTest.cpp</in>
+              <in>metropolisTest.cpp</in>
+              <in>paytestMainNetwork.cpp</in>
+              <in>paytestTestNetwork.cpp</in>
+              <in>ropsten.cpp</in>
+              <in>transitionnetTest.cpp</in>
+            </df>
+            <in>Ethash.cpp</in>
+            <in>EthashAux.cpp</in>
+            <in>EthashCPUMiner.cpp</in>
+            <in>EthashClient.cpp</in>
+            <in>EthashProofOfWork.cpp</in>
+            <in>GenesisInfo.cpp</in>
+          </df>
+          <df name="libethcore">
+            <in>ABI.cpp</in>
+            <in>BasicAuthority.cpp</in>
+            <in>BlockHeader.cpp</in>
+            <in>ChainOperationParams.cpp</in>
+            <in>Common.cpp</in>
+            <in>CommonJS.cpp</in>
+            <in>ICAP.cpp</in>
+            <in>KeyManager.cpp</in>
+            <in>Precompiled.cpp</in>
+            <in>SealEngine.cpp</in>
+            <in>Transaction.cpp</in>
+          </df>
+          <df name="libethereum">
+            <in>Account.cpp</in>
+            <in>BasicGasPricer.cpp</in>
+            <in>Block.cpp</in>
+            <in>BlockChain.cpp</in>
+            <in>BlockChainSync.cpp</in>
+            <in>BlockDetails.cpp</in>
+            <in>BlockQueue.cpp</in>
+            <in>ChainParams.cpp</in>
+            <in>Client.cpp</in>
+            <in>ClientBase.cpp</in>
+            <in>ClientTest.cpp</in>
+            <in>CommonNet.cpp</in>
+            <in>Defaults.cpp</in>
+            <in>EthereumHost.cpp</in>
+            <in>EthereumPeer.cpp</in>
+            <in>Executive.cpp</in>
+            <in>ExtVM.cpp</in>
+            <in>GasPricer.cpp</in>
+            <in>GenericMiner.cpp</in>
+            <in>GenesisInfo.cpp</in>
+            <in>Interface.cpp</in>
+            <in>LogFilter.cpp</in>
+            <in>MiningClient.cpp</in>
+            <in>State.cpp</in>
+            <in>Transaction.cpp</in>
+            <in>TransactionQueue.cpp</in>
+            <in>TransactionReceipt.cpp</in>
+          </df>
+          <df name="libevm">
+            <in>ExtVMFace.cpp</in>
+            <in>JitVM.cpp</in>
+            <in>SmartVM.cpp</in>
+            <in>VM.cpp</in>
+            <in>VMCalls.cpp</in>
+            <in>VMFactory.cpp</in>
+            <in>VMOpt.cpp</in>
+            <in>VMValidate.cpp</in>
+          </df>
+          <df name="libevmcore">
+            <in>Instruction.cpp</in>
+          </df>
+          <df name="libp2p">
+            <in>Capability.cpp</in>
+            <in>Common.cpp</in>
+            <in>Host.cpp</in>
+            <in>HostCapability.cpp</in>
+            <in>Network.cpp</in>
+            <in>NodeTable.cpp</in>
+            <in>Peer.cpp</in>
+            <in>RLPXFrameCoder.cpp</in>
+            <in>RLPXFrameReader.cpp</in>
+            <in>RLPXFrameWriter.cpp</in>
+            <in>RLPXSocketIO.cpp</in>
+            <in>RLPxHandshake.cpp</in>
+            <in>Session.cpp</in>
+            <in>UDP.cpp</in>
+            <in>UPnP.cpp</in>
+          </df>
+          <df name="libweb3jsonrpc">
+            <in>AccountHolder.cpp</in>
+            <in>AdminEth.cpp</in>
+            <in>AdminNet.cpp</in>
+            <in>AdminUtils.cpp</in>
+            <in>Debug.cpp</in>
+            <in>Eth.cpp</in>
+            <in>IpcServerBase.cpp</in>
+            <in>JsonHelper.cpp</in>
+            <in>LevelDB.cpp</in>
+            <in>MemoryDB.cpp</in>
+            <in>Net.cpp</in>
+            <in>Personal.cpp</in>
+            <in>SafeHttpServer.cpp</in>
+            <in>SessionManager.cpp</in>
+            <in>Test.cpp</in>
+            <in>UnixSocketServer.cpp</in>
+            <in>Web3.cpp</in>
+            <in>Whisper.cpp</in>
+            <in>WinPipeServer.cpp</in>
+          </df>
+          <df name="libwebthree">
+            <in>WebThree.cpp</in>
+          </df>
+          <df name="libwhisper">
+            <in>Common.cpp</in>
+            <in>Interface.cpp</in>
+            <in>Message.cpp</in>
+            <in>WhisperDB.cpp</in>
+            <in>WhisperHost.cpp</in>
+            <in>WhisperPeer.cpp</in>
+          </df>
+          <df name="rlp">
+            <in>main.cpp</in>
+          </df>
+          <df name="test">
+            <df name="deprecated">
+              <in>fork.cpp</in>
+              <in>kademlia.cpp</in>
+              <in>main.cpp</in>
+              <in>txTest.cpp</in>
+            </df>
+            <df name="external-dependencies">
+              <in>boost.cpp</in>
+            </df>
+            <df name="fuzzTesting">
+              <in>createRandomTest.cpp</in>
+              <in>fuzzHelper.cpp</in>
+            </df>
+            <df name="libdevcore">
+              <in>Base36.cpp</in>
+              <in>CommonJS.cpp</in>
+              <in>FixedHash.cpp</in>
+              <in>RangeMask.cpp</in>
+              <in>core.cpp</in>
+              <in>rlp.cpp</in>
+            </df>
+            <df name="libdevcrypto">
+              <in>AES.cpp</in>
+              <in>MemTrie.cpp</in>
+              <in>SecretStore.cpp</in>
+              <in>crypto.cpp</in>
+              <in>hexPrefix.cpp</in>
+              <in>trie.cpp</in>
+            </df>
+            <df name="libethcore">
+              <in>commonjs.cpp</in>
+              <in>dagger.cpp</in>
+              <in>difficulty.cpp</in>
+              <in>icap.cpp</in>
+              <in>keymanager.cpp</in>
+            </df>
+            <df name="libethereum">
+              <in>Block.cpp</in>
+              <in>BlockChain.cpp</in>
+              <in>BlockChainInsert.cpp</in>
+              <in>BlockChainTests.cpp</in>
+              <in>BlockChainTestsBoost.cpp</in>
+              <in>BlockQueue.cpp</in>
+              <in>ClientBase.cpp</in>
+              <in>EthereumPeerTest.cpp</in>
+              <in>GasPricer.cpp</in>
+              <in>Genesis.cpp</in>
+              <in>StateTests.cpp</in>
+              <in>StateUnitTests.cpp</in>
+              <in>Transaction.cpp</in>
+              <in>TransactionQueue.cpp</in>
+              <in>TransactionTests.cpp</in>
+            </df>
+            <df name="libevm">
+              <in>vm.cpp</in>
+            </df>
+            <df name="libp2p">
+              <in>capability.cpp</in>
+              <in>eip-8.cpp</in>
+              <in>net.cpp</in>
+              <in>peer.cpp</in>
+              <in>rlpx.cpp</in>
+            </df>
+            <df name="libtesteth">
+              <in>BlockChainHelper.cpp</in>
+              <in>ImportTest.cpp</in>
+              <in>Options.cpp</in>
+              <in>Stats.cpp</in>
+              <in>TestHelper.cpp</in>
+              <in>TestOutputHelper.cpp</in>
+              <in>TestUtils.cpp</in>
+              <in>boostTest.cpp</in>
+            </df>
+            <df name="libtestutils">
+              <in>BlockChainLoader.cpp</in>
+              <in>Common.cpp</in>
+              <in>FixedClient.cpp</in>
+              <in>StateLoader.cpp</in>
+            </df>
+            <df name="libweb3core">
+              <in>memorydb.cpp</in>
+              <in>overlaydb.cpp</in>
+            </df>
+            <df name="libweb3jsonrpc">
+              <in>AccountHolder.cpp</in>
+              <in>Client.cpp</in>
+              <in>jsonrpc.cpp</in>
+            </df>
+            <df name="libwhisper">
+              <in>bloomFilter.cpp</in>
+              <in>shhrpc.cpp</in>
+              <in>whisperDB.cpp</in>
+              <in>whisperMessage.cpp</in>
+              <in>whisperTopic.cpp</in>
+            </df>
+            <df name="performance">
+              <in>mul64c.c</in>
+            </df>
+          </df>
+          <df name="utils">
+            <df name="json_spirit">
+              <in>json_spirit_reader.cpp</in>
+              <in>json_spirit_value.cpp</in>
+              <in>json_spirit_writer.cpp</in>
+            </df>
+            <df name="libscrypt">
+              <in>b64.c</in>
+              <in>crypto-mcf.c</in>
+              <in>crypto-scrypt-saltgen.c</in>
+              <in>crypto_scrypt-check.c</in>
+              <in>crypto_scrypt-hash.c</in>
+              <in>crypto_scrypt-hexconvert.c</in>
+              <in>crypto_scrypt-nosse.c</in>
+              <in>sha256.c</in>
+              <in>slowequals.c</in>
+            </df>
+          </df>
+        </df>
+        <df name="json">
+          <in>json_spirit_reader.cpp</in>
+          <in>json_spirit_value.cpp</in>
+          <in>json_spirit_writer.cpp</in>
+        </df>
+        <df name="leveldb">
+          <df name="db">
+            <in>autocompact_test.cc</in>
+            <in>builder.cc</in>
+            <in>c.cc</in>
+            <in>c_test.c</in>
+            <in>corruption_test.cc</in>
+            <in>db_bench.cc</in>
+            <in>db_impl.cc</in>
+            <in>db_iter.cc</in>
+            <in>db_test.cc</in>
+            <in>dbformat.cc</in>
+            <in>dbformat_test.cc</in>
+            <in>dumpfile.cc</in>
+            <in>filename.cc</in>
+            <in>filename_test.cc</in>
+            <in>leveldb_main.cc</in>
+            <in>log_reader.cc</in>
+            <in>log_test.cc</in>
+            <in>log_writer.cc</in>
+            <in>memtable.cc</in>
+            <in>repair.cc</in>
+            <in>skiplist_test.cc</in>
+            <in>table_cache.cc</in>
+            <in>version_edit.cc</in>
+            <in>version_edit_test.cc</in>
+            <in>version_set.cc</in>
+            <in>version_set_test.cc</in>
+            <in>write_batch.cc</in>
+            <in>write_batch_test.cc</in>
+          </df>
+          <df name="doc">
+            <df name="bench">
+              <in>db_bench_sqlite3.cc</in>
+              <in>db_bench_tree_db.cc</in>
+            </df>
+          </df>
+          <df name="helpers">
+            <df name="memenv">
+              <in>memenv.cc</in>
+              <in>memenv_test.cc</in>
+            </df>
+          </df>
+          <df name="issues">
+            <in>issue178_test.cc</in>
+            <in>issue200_test.cc</in>
+          </df>
+          <df name="port">
+            <in>port_posix.cc</in>
+            <in>port_win.cc</in>
+          </df>
+          <df name="table">
+            <in>block.cc</in>
+            <in>block_builder.cc</in>
+            <in>filter_block.cc</in>
+            <in>filter_block_test.cc</in>
+            <in>format.cc</in>
+            <in>iterator.cc</in>
+            <in>merger.cc</in>
+            <in>table.cc</in>
+            <in>table_builder.cc</in>
+            <in>table_test.cc</in>
+            <in>two_level_iterator.cc</in>
+          </df>
+          <df name="util">
+            <in>arena.cc</in>
+            <in>arena_test.cc</in>
+            <in>bloom.cc</in>
+            <in>bloom_test.cc</in>
+            <in>cache.cc</in>
+            <in>cache_test.cc</in>
+            <in>coding.cc</in>
+            <in>coding_test.cc</in>
+            <in>comparator.cc</in>
+            <in>crc32c.cc</in>
+            <in>crc32c_test.cc</in>
+            <in>env.cc</in>
+            <in>env_posix.cc</in>
+            <in>env_test.cc</in>
+            <in>env_win.cc</in>
+            <in>filter_policy.cc</in>
+            <in>hash.cc</in>
+            <in>hash_test.cc</in>
+            <in>histogram.cc</in>
+            <in>logging.cc</in>
+            <in>options.cc</in>
+            <in>status.cc</in>
+            <in>testharness.cc</in>
+            <in>testutil.cc</in>
+          </df>
+        </df>
+        <df name="primitives">
+          <in>block.cpp</in>
+          <in>transaction.cpp</in>
+        </df>
+        <df name="qt">
+          <df name="test">
+            <in>paymentservertests.cpp</in>
+            <in>test_main.cpp</in>
+            <in>uritests.cpp</in>
+          </df>
+          <in>addeditadrenalinenode.cpp</in>
+          <in>addressbookpage.cpp</in>
+          <in>addresstablemodel.cpp</in>
+          <in>adrenalinenodeconfigdialog.cpp</in>
+          <in>askpassphrasedialog.cpp</in>
+          <in>bip38tooldialog.cpp</in>
+          <in>bitcoinaddressvalidator.cpp</in>
+          <in>bitcoinamountfield.cpp</in>
+          <in>bitcoingui.cpp</in>
+          <in>bitcoinunits.cpp</in>
+          <in>blockexplorer.cpp</in>
+          <in>clientmodel.cpp</in>
+          <in>coincontroldialog.cpp</in>
+          <in>coincontroltreewidget.cpp</in>
+          <in>csvmodelwriter.cpp</in>
+          <in>editaddressdialog.cpp</in>
+          <in>guiutil.cpp</in>
+          <in>intro.cpp</in>
+          <in>macdockiconhandler.mm</in>
+          <in>macnotificationhandler.mm</in>
+          <in>masternodemanager.cpp</in>
+          <in>multisenddialog.cpp</in>
+          <in>networkstyle.cpp</in>
+          <in>notificator.cpp</in>
+          <in>obfuscationconfig.cpp</in>
+          <in>openuridialog.cpp</in>
+          <in>optionsdialog.cpp</in>
+          <in>optionsmodel.cpp</in>
+          <in>overviewpage.cpp</in>
+          <in>paymentrequestplus.cpp</in>
+          <in>paymentserver.cpp</in>
+          <in>paytest.cpp</in>
+          <in>paytestsendconfig.cpp</in>
+          <in>payteststrings.cpp</in>
+          <in>peertablemodel.cpp</in>
+          <in>platformstyle.cpp</in>
+          <in>qcustomplot.cpp</in>
+          <in>qvalidatedlineedit.cpp</in>
+          <in>qvaluecombobox.cpp</in>
+          <in>receivecoinsdialog.cpp</in>
+          <in>receiverequestdialog.cpp</in>
+          <in>recentrequeststablemodel.cpp</in>
+          <in>rpcconsole.cpp</in>
+          <in>sendcoinsdialog.cpp</in>
+          <in>sendcoinsentry.cpp</in>
+          <in>signverifymessagedialog.cpp</in>
+          <in>splashscreen.cpp</in>
+          <in>tradingdialog.cpp</in>
+          <in>trafficgraphwidget.cpp</in>
+          <in>transactiondesc.cpp</in>
+          <in>transactiondescdialog.cpp</in>
+          <in>transactionfilterproxy.cpp</in>
+          <in>transactionrecord.cpp</in>
+          <in>transactiontablemodel.cpp</in>
+          <in>transactionview.cpp</in>
+          <in>utilitydialog.cpp</in>
+          <in>walletframe.cpp</in>
+          <in>walletmodel.cpp</in>
+          <in>walletmodeltransaction.cpp</in>
+          <in>walletview.cpp</in>
+          <in>winshutdownmonitor.cpp</in>
+        </df>
+        <df name="script">
+          <in>bitcoinconsensus.cpp</in>
+          <in>interpreter.cpp</in>
+          <in>script.cpp</in>
+          <in>script_error.cpp</in>
+          <in>sigcache.cpp</in>
+          <in>sign.cpp</in>
+          <in>standard.cpp</in>
+        </df>
+        <df name="secp256k1">
+          <df name="src">
+            <df name="java">
+              <in>org_bitcoin_NativeSecp256k1.c</in>
+            </df>
+            <in>bench_inv.c</in>
+            <in>bench_sign.c</in>
+            <in>bench_verify.c</in>
+            <in>field_5x52_asm.asm</in>
+            <in>secp256k1.c</in>
+            <in>tests.c</in>
+          </df>
+        </df>
+        <df name="test">
+          <in>Checkpoints_tests.cpp</in>
+          <in>DoS_tests.cpp</in>
+          <in>accounting_tests.cpp</in>
+          <in>alert_tests.cpp</in>
+          <in>allocator_tests.cpp</in>
+          <in>arith_uint256_tests.cpp</in>
+          <in>base32_tests.cpp</in>
+          <in>base58_tests.cpp</in>
+          <in>base64_tests.cpp</in>
+          <in>bip32_tests.cpp</in>
+          <in>bloom_tests.cpp</in>
+          <in>checkblock_tests.cpp</in>
+          <in>coins_tests.cpp</in>
+          <in>compress_tests.cpp</in>
+          <in>crypto_tests.cpp</in>
+          <in>getarg_tests.cpp</in>
+          <in>hash_tests.cpp</in>
+          <in>key_tests.cpp</in>
+          <in>main_tests.cpp</in>
+          <in>mempool_tests.cpp</in>
+          <in>miner_tests.cpp</in>
+          <in>mruset_tests.cpp</in>
+          <in>multisig_tests.cpp</in>
+          <in>netbase_tests.cpp</in>
+          <in>pmt_tests.cpp</in>
+          <in>rpc_tests.cpp</in>
+          <in>rpc_wallet_tests.cpp</in>
+          <in>sanity_tests.cpp</in>
+          <in>script_P2SH_tests.cpp</in>
+          <in>script_tests.cpp</in>
+          <in>scriptnum_tests.cpp</in>
+          <in>serialize_tests.cpp</in>
+          <in>sighash_tests.cpp</in>
+          <in>sigopcount_tests.cpp</in>
+          <in>skiplist_tests.cpp</in>
+          <in>test_paytest.cpp</in>
+          <in>timedata_tests.cpp</in>
+          <in>transaction_tests.cpp</in>
+          <in>uint256_tests.cpp</in>
+          <in>univalue_tests.cpp</in>
+          <in>util_tests.cpp</in>
+          <in>wallet_tests.cpp</in>
+        </df>
+        <df name="univalue">
+          <in>gen.cpp</in>
+          <in>univalue.cpp</in>
+          <in>univalue_read.cpp</in>
+          <in>univalue_write.cpp</in>
+        </df>
+        <in>activemasternode.cpp</in>
+        <in>addrman.cpp</in>
+        <in>alert.cpp</in>
+        <in>allocators.cpp</in>
+        <in>amount.cpp</in>
+        <in>arith_uint256.cpp</in>
+        <in>base58.cpp</in>
+        <in>bip38.cpp</in>
+        <in>bloom.cpp</in>
+        <in>chain.cpp</in>
+        <in>chainparams.cpp</in>
+        <in>chainparamsbase.cpp</in>
+        <in>checkpoints.cpp</in>
+        <in>clientversion.cpp</in>
+        <in>coins.cpp</in>
+        <in>compressor.cpp</in>
+        <in>core_read.cpp</in>
+        <in>core_write.cpp</in>
+        <in>crypter.cpp</in>
+        <in>darksend.cpp</in>
+        <in>db.cpp</in>
+        <in>eccryptoverify.cpp</in>
+        <in>ecwrapper.cpp</in>
+        <in>hash.cpp</in>
+        <in>init.cpp</in>
+        <in>instantx.cpp</in>
+        <in>kernel.cpp</in>
+        <in>key.cpp</in>
+        <in>keystore.cpp</in>
+        <in>leveldbwrapper.cpp</in>
+        <in>main.cpp</in>
+        <in>masternode.cpp</in>
+        <in>masternodeconfig.cpp</in>
+        <in>merkleblock.cpp</in>
+        <in>miner.cpp</in>
+        <in>multipliers.i</in>
+        <in>net.cpp</in>
+        <in>netbase.cpp</in>
+        <in>noui.cpp</in>
+        <in>paytest-cli.cpp</in>
+        <in>paytest-tx.cpp</in>
+        <in>paytestd.cpp</in>
+        <in>pow.cpp</in>
+        <in>protocol.cpp</in>
+        <in>pubkey.cpp</in>
+        <in>random.cpp</in>
+        <in>rest.cpp</in>
+        <in>rpcblockchain.cpp</in>
+        <in>rpcclient.cpp</in>
+        <in>rpcdarksend.cpp</in>
+        <in>rpcdump.cpp</in>
+        <in>rpcmining.cpp</in>
+        <in>rpcmisc.cpp</in>
+        <in>rpcnet.cpp</in>
+        <in>rpcprotocol.cpp</in>
+        <in>rpcrawtransaction.cpp</in>
+        <in>rpcserver.cpp</in>
+        <in>rpcwallet.cpp</in>
+        <in>spork.cpp</in>
+        <in>sync.cpp</in>
+        <in>timedata.cpp</in>
+        <in>txdb.cpp</in>
+        <in>txmempool.cpp</in>
+        <in>uint256.cpp</in>
+        <in>util.cpp</in>
+        <in>utilmoneystr.cpp</in>
+        <in>utilstrencodings.cpp</in>
+        <in>utiltime.cpp</in>
+        <in>wallet.cpp</in>
+        <in>wallet_ismine.cpp</in>
+        <in>walletdb.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>CMakeLists.txt</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand>${CMAKE} -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=${IDE_CC} -DCMAKE_CXX_COMPILER=${IDE_CXX} -DCMAKE_C_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_CXX_FLAGS_DEBUG="-g3 -gdwarf-2" -DCMAKE_EXPORT_COMPILE_COMMANDS=ON .</preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="src/activemasternode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/addrman.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/alert.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/allocators.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/amount.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/arith_uint256.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/base58.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bip38.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/bloom.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/chain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/chainparams.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/chainparamsbase.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/checkpoints.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/clientversion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/coins.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/compat/glibc_compat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/compat/glibc_sanity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/compat/glibcxx_compat.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/compat/glibcxx_sanity.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/compat/strnlen.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/compressor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core_read.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/core_write.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypto/aes_helper.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/crypto/cubehash.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/crypto/echo.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/crypto/fugue.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/crypto/gost.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/crypto/hmac_sha256.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypto/hmac_sha512.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypto/jh.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/crypto/rfc6979_hmac_sha256.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypto/ripemd160.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypto/scrypt.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypto/sha1.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypto/sha256.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypto/sha512.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/crypto/skein.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/darksend.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/db.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/eccryptoverify.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ecwrapper.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/bench/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/eth/AccountManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/eth/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/ethkey/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/ethminer/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/ethvm/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/examples/capi.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/examples/examplevm.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Arith256.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Array.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/BasicBlock.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Cache.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Compiler.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/CompilerHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Endianness.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/ExecStats.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Ext.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/GasMeter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Instruction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/JIT.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Memory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Optimizer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/RuntimeManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Type.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/libevmjit/Utils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/tests/test-evm.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/evmjit/tests/test-evmjit-standalone.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/Base64.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/Common.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/CommonData.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/CommonIO.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/CommonJS.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/FileSystem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/FixedHash.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/Guards.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/Hash.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/Log.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/MemoryDB.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/OverlayDB.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/RLP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/SHA3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/TransientDirectory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/TrieCommon.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/TrieDB.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/TrieHash.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcore/Worker.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcrypto/AES.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcrypto/Common.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcrypto/CryptoPP.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcrypto/ECDHE.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libdevcrypto/SecretStore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethash/internal.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethash/io.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethash/io_posix.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethash/io_win32.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethash/mmap_win32.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethash/sha3.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethash/util.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethash/util_win32.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/Ethash.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/EthashAux.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/EthashCPUMiner.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/EthashClient.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/EthashProofOfWork.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/GenesisInfo.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/eip150Test.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/eip158Test.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/frontierTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/homesteadTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/mainNetwork.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/mainNetworkTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/metropolisTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/paytestMainNetwork.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/paytestTestNetwork.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/ropsten.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethashseal/genesis/transitionnetTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/ABI.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/BasicAuthority.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/BlockHeader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/ChainOperationParams.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/Common.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/CommonJS.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/ICAP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/KeyManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/Precompiled.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/SealEngine.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethcore/Transaction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/Account.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/BasicGasPricer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/Block.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/BlockChain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/BlockChainSync.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/BlockDetails.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/BlockQueue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/ChainParams.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/Client.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/ClientBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/ClientTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/CommonNet.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/Defaults.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/EthereumHost.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/EthereumPeer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/Executive.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/ExtVM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/GasPricer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/GenericMiner.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/GenesisInfo.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/Interface.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/LogFilter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/MiningClient.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/State.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/Transaction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/TransactionQueue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libethereum/TransactionReceipt.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libevm/ExtVMFace.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libevm/JitVM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libevm/SmartVM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libevm/VM.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libevm/VMCalls.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libevm/VMFactory.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libevm/VMOpt.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libevm/VMValidate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libevmcore/Instruction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/Capability.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/Common.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/Host.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/HostCapability.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/Network.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/NodeTable.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/Peer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/RLPXFrameCoder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/RLPXFrameReader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/RLPXFrameWriter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/RLPXSocketIO.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/RLPxHandshake.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/Session.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/UDP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libp2p/UPnP.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/AccountHolder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/AdminEth.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/AdminNet.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/AdminUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/Debug.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/Eth.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/IpcServerBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/JsonHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/LevelDB.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/MemoryDB.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/Net.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/Personal.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/SafeHttpServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/SessionManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/Test.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/UnixSocketServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/Web3.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/Whisper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libweb3jsonrpc/WinPipeServer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libwebthree/WebThree.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libwhisper/Common.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/libwhisper/Interface.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libwhisper/Message.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libwhisper/WhisperDB.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libwhisper/WhisperHost.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/libwhisper/WhisperPeer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/rlp/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/test/deprecated/fork.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/deprecated/kademlia.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/deprecated/main.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/deprecated/txTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/external-dependencies/boost.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/fuzzTesting/createRandomTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/fuzzTesting/fuzzHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcore/Base36.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcore/CommonJS.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcore/FixedHash.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcore/RangeMask.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcore/core.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcore/rlp.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcrypto/AES.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcrypto/MemTrie.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcrypto/SecretStore.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcrypto/crypto.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcrypto/hexPrefix.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libdevcrypto/trie.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethcore/commonjs.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethcore/dagger.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethcore/difficulty.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethcore/icap.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethcore/keymanager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/Block.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/BlockChain.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/BlockChainInsert.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/BlockChainTests.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/BlockChainTestsBoost.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/BlockQueue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/ClientBase.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/EthereumPeerTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/GasPricer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/Genesis.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/StateTests.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/StateUnitTests.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/Transaction.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/TransactionQueue.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libethereum/TransactionTests.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libevm/vm.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libp2p/capability.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libp2p/eip-8.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libp2p/net.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libp2p/peer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libp2p/rlpx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtesteth/BlockChainHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtesteth/ImportTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtesteth/Options.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtesteth/Stats.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtesteth/TestHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtesteth/TestOutputHelper.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtesteth/TestUtils.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtesteth/boostTest.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtestutils/BlockChainLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtestutils/Common.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtestutils/FixedClient.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libtestutils/StateLoader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libweb3core/memorydb.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libweb3core/overlaydb.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libweb3jsonrpc/AccountHolder.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libweb3jsonrpc/Client.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libweb3jsonrpc/jsonrpc.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libwhisper/bloomFilter.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libwhisper/shhrpc.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libwhisper/whisperDB.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libwhisper/whisperMessage.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/libwhisper/whisperTopic.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/test/performance/mul64c.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/json_spirit/json_spirit_reader.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/json_spirit/json_spirit_value.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/json_spirit/json_spirit_writer.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/libscrypt/b64.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/libscrypt/crypto-mcf.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/libscrypt/crypto-scrypt-saltgen.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/libscrypt/crypto_scrypt-check.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/libscrypt/crypto_scrypt-hash.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/libscrypt/crypto_scrypt-hexconvert.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/libscrypt/crypto_scrypt-nosse.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/libscrypt/sha256.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/ethereum/utils/libscrypt/slowequals.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/hash.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/init.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/instantx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/json/json_spirit_reader.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/json/json_spirit_value.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/json/json_spirit_writer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/kernel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/key.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/keystore.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/autocompact_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/builder.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/c.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/c_test.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/corruption_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/db_bench.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/db_impl.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/db_iter.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/db_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/dbformat.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/dbformat_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/dumpfile.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/filename.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/filename_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/leveldb_main.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/log_reader.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/log_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/log_writer.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/memtable.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/repair.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/skiplist_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/table_cache.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/version_edit.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/version_edit_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/leveldb/db/version_set.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/version_set_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/write_batch.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/db/write_batch_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/doc/bench/db_bench_sqlite3.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/leveldb/doc/bench/db_bench_tree_db.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/leveldb/helpers/memenv/memenv.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/leveldb/helpers/memenv/memenv_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/leveldb/issues/issue178_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/leveldb/issues/issue200_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/leveldb/port/port_posix.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/port/port_win.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/table/block.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/table/block_builder.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/table/filter_block.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/table/filter_block_test.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/leveldb/table/format.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/table/iterator.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/table/merger.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/table/table.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/table/table_builder.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/table/table_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/table/two_level_iterator.cc"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/leveldb/util/arena.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/arena_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/bloom.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/bloom_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/cache.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/cache_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/coding.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/coding_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/comparator.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/crc32c.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/crc32c_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/env.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/env_posix.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/env_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/env_win.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/filter_policy.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/hash.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/hash_test.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/histogram.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/logging.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/options.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/status.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/testharness.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldb/util/testutil.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/leveldbwrapper.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/masternode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/masternodeconfig.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/merkleblock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/miner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/multipliers.i" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/net.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/netbase.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/noui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/paytest-cli.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/paytest-tx.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/paytestd.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/pow.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/primitives/block.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/primitives/transaction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/protocol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/pubkey.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/addeditadrenalinenode.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/addressbookpage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/addresstablemodel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/adrenalinenodeconfigdialog.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/qt/askpassphrasedialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/bip38tooldialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/bitcoinaddressvalidator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/bitcoinamountfield.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/bitcoingui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/bitcoinunits.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/blockexplorer.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/clientmodel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/coincontroldialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/coincontroltreewidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/csvmodelwriter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/editaddressdialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/guiutil.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/intro.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/macdockiconhandler.mm" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/macnotificationhandler.mm" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/masternodemanager.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/multisenddialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/networkstyle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/notificator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/obfuscationconfig.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/openuridialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/optionsdialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/optionsmodel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/overviewpage.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/paymentrequestplus.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/paymentserver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/paytest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/paytestsendconfig.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/payteststrings.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/peertablemodel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/platformstyle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/qcustomplot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/qvalidatedlineedit.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/qvaluecombobox.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/receivecoinsdialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/receiverequestdialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/recentrequeststablemodel.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/qt/rpcconsole.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/sendcoinsdialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/sendcoinsentry.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/signverifymessagedialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/splashscreen.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/test/paymentservertests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/test/test_main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/test/uritests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/tradingdialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/trafficgraphwidget.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/transactiondesc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/transactiondescdialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/transactionfilterproxy.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/transactionrecord.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/transactiontablemodel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/transactionview.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/utilitydialog.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/walletframe.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/walletmodel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/walletmodeltransaction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/walletview.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/qt/winshutdownmonitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/random.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcblockchain.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcclient.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcdarksend.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcdump.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcmining.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcmisc.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcnet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcprotocol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcrawtransaction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcserver.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/rpcwallet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/script/bitcoinconsensus.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/script/interpreter.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/script/script.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/script/script_error.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/script/sigcache.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/script/sign.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/script/standard.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/secp256k1/src/bench_inv.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/secp256k1/src/bench_sign.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/secp256k1/src/bench_verify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/secp256k1/src/field_5x52_asm.asm"
+            ex="false"
+            tool="4"
+            flavor2="0">
+      </item>
+      <item path="src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c"
+            ex="false"
+            tool="0"
+            flavor2="0">
+      </item>
+      <item path="src/secp256k1/src/secp256k1.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/secp256k1/src/tests.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="src/spork.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/sync.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/Checkpoints_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/DoS_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/accounting_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/alert_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/allocator_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/arith_uint256_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/base32_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/base58_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/base64_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/bip32_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/bloom_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/checkblock_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/coins_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/compress_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/crypto_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/getarg_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/hash_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/key_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/main_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/mempool_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/miner_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/mruset_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/multisig_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/netbase_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/pmt_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/rpc_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/rpc_wallet_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/sanity_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/script_P2SH_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/script_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/scriptnum_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/serialize_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/sighash_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/sigopcount_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/skiplist_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/test_paytest.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/timedata_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/transaction_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/uint256_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/univalue_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/util_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/test/wallet_tests.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/timedata.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/txdb.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/txmempool.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/uint256.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/univalue/gen.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/univalue/univalue.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/univalue/univalue_read.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/univalue/univalue_write.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/util.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/utilmoneystr.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/utilstrencodings.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/utiltime.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/wallet.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/wallet_ismine.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/walletdb.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
