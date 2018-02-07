@@ -1,0 +1,26 @@
+# /etc/conf.d/paytestd: config file for /etc/init.d/paytestd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/paytest/paytest.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/paytestd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/paytestd.pid"
+
+# Where to write paytestd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/paytestd"
+
+# User and group to own paytestd process
+#BITCOIND_USER="paytest"
+#BITCOIND_GROUP="paytest"
+
+# Path to paytestd executable
+#BITCOIND_BIN="/usr/bin/paytestd"
+
+# Nice value to run paytestd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

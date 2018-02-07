@@ -1,0 +1,26 @@
+[Unit]
+Description=PAYTEST's distributed currency daemon
+After=network.target
+
+[Service]
+User=paytest
+Group=paytest
+
+Type=forking
+PIDFile=/var/lib/paytestd/paytestd.pid
+
+ExecStart=/usr/bin/paytestd -daemon -pid=/var/lib/paytestd/paytestd.pid \
+          -conf=/etc/paytest/paytest.conf -datadir=/var/lib/paytestd
+
+ExecStop=-/usr/bin/paytest-cli -conf=/etc/paytest/paytest.conf \
+         -datadir=/var/lib/paytestd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

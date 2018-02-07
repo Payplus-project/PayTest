@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ca">locale/paytest_ca.qm</file>
+        <file alias="da">locale/paytest_da.qm</file>
+        <file alias="de">locale/paytest_de.qm</file>
+        <file alias="en">locale/paytest_en.qm</file>
+        <file alias="en_US">locale/paytest_en_US.qm</file>
+        <file alias="es">locale/paytest_es.qm</file>
+        <file alias="fr_FR">locale/paytest_fr_FR.qm</file>
+        <file alias="it">locale/paytest_it.qm</file>
+        <file alias="ja">locale/paytest_ja.qm</file>
+        <file alias="pt">locale/paytest_pt.qm</file>
+        <file alias="ro_RO">locale/paytest_ro_RO.qm</file>
+        <file alias="ru">locale/paytest_ru.qm</file>
+        <file alias="zh_TW">locale/paytest_zh_TW.qm</file>
+    </qresource>
+</RCC>

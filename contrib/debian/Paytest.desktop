@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=PayTest
+Comment=PayTest P2P Cryptocurrency
+Exec=paytest-qt %u
+Terminal=false
+Type=Application
+Icon=paytest128
+MimeType=x-scheme-handler/paytest;
+Categories=Office;Finance;
+Name[en_AU]=PayTest
