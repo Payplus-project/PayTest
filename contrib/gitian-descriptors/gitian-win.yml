@@ -1,5 +1,5 @@
 ---
-name: "paytest-win-2.2"
+name: "paytest-win-1.0.0.0"
 enable_cache: true
 suites:
 - "trusty"

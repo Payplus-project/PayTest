@@ -20,7 +20,7 @@ CMasternodePayments masternodePayments;
 map<uint256, CMasternodePaymentWinner> mapSeenMasternodeVotes;
 // keep track of the scanning errors I've seen
 map<uint256, int> mapSeenMasternodeScanningErrors;
-// who's asked for the masternode list and the last time
+// who's asked for the masternode list and the last getporttime
 std::map<CNetAddr, int64_t> askedForMasternodeList;
 // which masternodes we've asked for
 std::map<COutPoint, int64_t> askedForMasternodeListEntry;

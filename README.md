@@ -40,7 +40,7 @@ In addition, without PayTestgate and Pmn, Bitcoin and Ethereum cannot interact w
 | Masternode Requirement | `16,120 PAYTEST` |
 | Masternode Reward | `40% PoS Block ` |
 | Port | `37373` |
-| RPC Port | `9888` |
+| RPC Port | `37372` |
 | Masternode Port | `37373` |
 
 
