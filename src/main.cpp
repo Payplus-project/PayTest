@@ -1659,16 +1659,18 @@ CAmount GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees, int nHeight)
 
 CAmount GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount)
 {
+    int64_t ret = blockValue * 0.4; //40% for masternodes;
+    
     if (nHeight < 1000) {
-        int64_t ret = blockValue * 0.01; //1% for masternodes
+        ret = blockValue * 0.01; //1% for masternodes
     } else if (nHeight < 6000) {
-        int64_t ret = blockValue * 0.99; //99% for masternodes
+        ret = blockValue * 0.99; //99% for masternodes
 //    } else if (nHeight < 27000) {
-//        int64_t ret = blockValue * 0.9; //90% for masternodes
+//        ret = blockValue * 0.9; //90% for masternodes
     } else if (nHeight < 57000) {
-        int64_t ret = blockValue * 0.67; //67% for masternodes
+        ret = blockValue * 0.67; //67% for masternodes
     } else {
-        int64_t ret = blockValue * 0.75; //75% for masternodes
+        ret = blockValue * 0.75; //75% for masternodes
     }
 
     return ret;
