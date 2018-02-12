@@ -134,9 +134,9 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x0000050bedfecb27f1dc3c852bc46e2bab57aaebeb7b54eba14e1d7aaf129403"));
-        assert(genesis.hashMerkleRoot == uint256("0xb735377ebff3f8dd68373293c1ca17d272896cd8d2ba4d842ec2d4a18fbdce85"));
-	
+//        assert(hashGenesisBlock == uint256("0x0000050bedfecb27f1dc3c852bc46e2bab57aaebeb7b54eba14e1d7aaf129403"));
+//        assert(genesis.hashMerkleRoot == uint256("0xb735377ebff3f8dd68373293c1ca17d272896cd8d2ba4d842ec2d4a18fbdce85"));
+	MineGenesis(genesis);
 // Single node address
 
 //        vSeeds.push_back(CDNSSeedData("sd1", "45.77.44.147")); // Singapore
